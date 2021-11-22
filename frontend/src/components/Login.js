@@ -1,13 +1,14 @@
 import React from 'react'
-import { Container,FloatingLabel, Button, Form, Image } from 'react-bootstrap'
+import { Container, FloatingLabel, Button, Form, Image } from 'react-bootstrap'
 import Logo from './logo2.svg'
+import './login.css'
 
 const login = () => {
     return (
         <div>
-           <Container className="d-grid h-100 text-center">
-               <div className="mb-3 text-center">
-                <Image src={Logo} alt="Logo" width="80" height="auto"/>
+            <Container className="d-grid h-100 text-center">
+                <div className="mb-3 text-center">
+                    <Image src={Logo} alt="Logo" width="80" height="auto" />
                 </div>
                 <h1 className="fs-3 fw-normal">Inicio Sesión</h1>
                 <FloatingLabel
