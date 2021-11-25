@@ -1,11 +1,10 @@
-import React from 'react'
 import { Container, FloatingLabel, Button, Form, Image } from 'react-bootstrap'
 import Logo from './logo2.svg'
 import './login.css'
 
-const login = () => {
+export default function login() {
     return (
-        <div>
+        <div className="Login">
             <Container className="d-grid h-100 text-center">
                 <div className="mb-3 text-center">
                     <Image src={Logo} alt="Logo" width="80" height="auto" />
@@ -29,4 +28,3 @@ const login = () => {
     )
 }
 
-export default login

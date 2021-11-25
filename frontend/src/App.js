@@ -1,18 +1,18 @@
-import React from 'react'
-import Navbar from './components/Navbar'
-import Login from './components/Login'
+import Navbar from "./components/Navbar";
+import AppRouter from "./routers/Router";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+        <div>
         <Navbar />
-      </header>
-      <div className="Login">
-        <Login/>
-      </div>
+
+        </div>
+        <AppRouter />
     </div>
   );
 }
 
 export default App;
+

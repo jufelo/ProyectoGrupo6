@@ -1,5 +1,7 @@
 const calcularPocentajes = (limiteCO, limiteCO2, limiteHC, limiteO2, valorCO, valorCO2, valorHC, valorO2) => {
 
+    let limiteCO = valorCO;
+
     let porcentajeCO = limiteCO ? valorCO * 100 / limiteCO : 0;
     let porcentajeCO2= limiteCO2 ? valorCO2 * 100 / limiteCO2 : 0;
     let porcentajeHC = limiteHC ? valorHC * 100 / limiteHC : 0;
