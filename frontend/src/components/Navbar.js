@@ -1,26 +1,26 @@
-import { Navbar, Container, Nav } from 'react-bootstrap'
 import './navbar.css'
 
 export default function navbar() {
-    return (
-        <div>
-            <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
-                <Container>
-                    <Navbar.Brand href="#home">Secretaría de Movilidad</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto">
-                            <Nav.Link href="/Parametros">Parámetros</Nav.Link>
-                            <Nav.Link href="/Niveles">Niveles</Nav.Link>
+  return (
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/login">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                        </Nav>
-                        <Nav>
-                            <Nav.Link href="/Login">Cerrar Sesión</Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
+        <div class="collapse navbar-collapse" id="navbarsExample03">
+          <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/parametros">Parámetros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/niveles">Niveles</a>
+            </li>
+          </ul>
         </div>
-    );
+      </div>
+    </nav>
+  );
 };
 

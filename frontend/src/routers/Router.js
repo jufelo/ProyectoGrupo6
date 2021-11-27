@@ -1,15 +1,15 @@
 import { Switch, Route } from "react-router-dom";
+import Navbar from "../components/Navbar";
 import Parametros from "../Pages/Parametros";
 import Niveles from "../Pages/Niveles";
 import Login from "../Pages/Login"
 import PageNotFound from "../Pages/PageNotFound";
-import { Navbar } from "react-bootstrap";
+import 'bootstrap';
 
 
 export default function AppRouter() {
     return (
         <>
-        <Navbar />
             <Switch>
                 <Route path="/parametros/" component={Parametros} />
                 <Route path="/niveles/" component={Niveles} />

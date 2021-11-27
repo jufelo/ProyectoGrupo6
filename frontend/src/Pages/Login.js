@@ -1,30 +1,28 @@
-import { Container, FloatingLabel, Button, Form, Image } from 'react-bootstrap'
+import 'bootstrap'
 import Logo from './logo2.svg'
 import './login.css'
 
 export default function login() {
     return (
-        <div className="Login">
-            <Container className="d-grid h-100 text-center">
-                <div className="mb-3 text-center">
-                    <Image src={Logo} alt="Logo" width="80" height="auto" />
-                </div>
-                <h1 className="fs-3 fw-normal">Inicio Sesión</h1>
-                <FloatingLabel
-                    controlId="floatingInput"
-                    label="Usuario"
-                    className="mb-2"
-                >
-                    <Form.Control type="email" placeholder="name@example.com" />
-                </FloatingLabel>
-                <FloatingLabel controlId="floatingPassword" label="Contraseña" className="mb-3">
-                    <Form.Control type="password" placeholder="Password" />
-                </FloatingLabel>
-                <Button variant="primary" size="lg" type="submit">Iniciar Sesión
-                </Button>
-                <p className="mt-3 text-muted">Mintic-UPB Group-6 NRC-53844 2021</p>
-            </Container>
+    <main class="form-signin text-center">
+      <form>
+        <img class="mb-4" src={Logo} alt="" width="72" height="auto" />
+        <h1 class="h3 mb-3 fw-normal">Inicio Sesión</h1>
+    
+        <div class="mb-3 form-floating">
+          <input type="text" class="form-control" id="floatingInput" placeholder="Usuario" />
+          <label for="floatingInput">Usuario</label>
         </div>
+        <div class="mb-3 form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+          <label for="floatingPassword">Contraseña</label>
+        </div>
+    
+        
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Iniciar Sesión</button>
+        <p class="mt-5 mb-3 text-muted">Mintic-UPB Group-6 NRC-53844 2021</p>
+      </form>
+    </main>
     )
 }
 

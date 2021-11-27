@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar";
 import AppRouter from "./routers/Router";
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
